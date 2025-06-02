@@ -33,7 +33,9 @@ You just need EC2 launch permissions. No special configuration required for inst
 1. Go to **Lambda > Create function**
 2. Runtime: `Python 3.x`
 3. Choose **Use existing role** → `LambdaAutoTagEC2Role`
-4. Paste the following code:
+4. Lambda Code<br>
+   You can use the below file for reference.<br>
+   [LambdaAutoTagEC2Role_tanuj.py](https://github.com/tanujbhatia24/AutoTagging_EC2_Instances/blob/main/LambdaAutoTagEC2Role_tanuj.py)
 ---
 
 ### 4. Setup CloudWatch Event Rule
