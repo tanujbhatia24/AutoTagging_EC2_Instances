@@ -67,8 +67,8 @@ You just need EC2 launch permissions. No special configuration required for inst
 ## Snapshots (Attach for validation)<br>
 1. EC2 instance creation with two tags<br>
 <img width="601" alt="image" src="https://github.com/user-attachments/assets/8469ab62-0920-4073-b4ff-dbd9caf3d128" /><br>
-2. Lambda function code<br>
-<img width="812" alt="image" src="https://github.com/user-attachments/assets/98374f52-c210-440b-a81e-65b388922e20" /><br>
+2. Lambda function & trigger<br>
+![image](https://github.com/user-attachments/assets/8709e0d6-87f1-4dd2-8e03-c46de4ae7b94)<br>
 3. IAM Role with policy<br>
 <img width="920" alt="image" src="https://github.com/user-attachments/assets/1a081dd9-0a3c-49b3-bb38-a4dd82eff817" /><br>
 4. CloudWatch Event rule<br>
