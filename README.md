@@ -1,4 +1,4 @@
-# Assignment 5 : Auto-Tagging EC2 Instances on Launch (AWS Lambda + Boto3 + Cloudwatch)
+# Assignment 5: Auto-Tagging EC2 Instances on Launch (AWS Lambda + Boto3 + Cloudwatch)
 ## Objective
 Automatically tag newly launched EC2 instances with the **current date** and the **IAM user or role** who launched them, using AWS Lambda and Boto3.
 ---
