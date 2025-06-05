@@ -61,16 +61,20 @@ You just need EC2 launch permissions. No special configuration required for inst
 3. Go to EC2 → Instances → Tags tab.
 4. Confirm that the following tags are present:
 5. LaunchDate: <Today's date>
-6. LaunchedBy: <IAM User or Role name>
+6. LaunchedBy: <"AWS Username" or "Unknown">
 ---
 
 ## Snapshots (Attach for validation)<br>
-1. EC2 instance creation with one tag<br>
+1. EC2 instance creation with two tags<br>
 <img width="601" alt="image" src="https://github.com/user-attachments/assets/8469ab62-0920-4073-b4ff-dbd9caf3d128" /><br>
-2. Lambda function code and execution log<br>
+2. Lambda function code<br>
+<img width="812" alt="image" src="https://github.com/user-attachments/assets/98374f52-c210-440b-a81e-65b388922e20" /><br>
 3. IAM Role with policy<br>
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/1a081dd9-0a3c-49b3-bb38-a4dd82eff817" /><br>
 4. CloudWatch Event rule<br>
+![image](https://github.com/user-attachments/assets/3a7adc1c-5fb5-4ca8-8f25-6666465b1610)<br>
 5. EC2 instance with auto-applied tags<br>
+![image](https://github.com/user-attachments/assets/029e16b8-348e-4053-8835-2751883ecacb)<br>
 ---
 
 ## Summary
