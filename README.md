@@ -4,7 +4,7 @@ Automatically tag newly launched EC2 instances with the **current date** and the
 ---
 
 ## Project Structure
-- `lambda_function.py` – Python code for tagging EC2 instances
+- `LambdaAutoTagEC2Role_tanuj.py` – Python code for tagging EC2 instances
 - `README.md` – Project instructions and documentation
 ---
 
@@ -26,13 +26,13 @@ You just need EC2 launch permissions. No special configuration required for inst
 1. Go to **IAM > Roles > Create role**
 2. Select **Trusted entity: Lambda**
 3. Attach the policy: `AmazonEC2FullAccess`
-4. Name the role: `LambdaAutoTagEC2Role`
+4. Name the role: `tanuj_LambdaAutoTagEC2Role`
 ---
 
 ### 3. Create the Lambda Function
 1. Go to **Lambda > Create function**
 2. Runtime: `Python 3.x`
-3. Choose **Use existing role** → `LambdaAutoTagEC2Role`
+3. Choose **Use existing role** → `tanuj_LambdaAutoTagEC2Role`
 4. Lambda Code<br>
    You can use the below file for reference.<br>
    [LambdaAutoTagEC2Role_tanuj.py](https://github.com/tanujbhatia24/AutoTagging_EC2_Instances/blob/main/LambdaAutoTagEC2Role_tanuj.py)
