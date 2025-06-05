@@ -39,9 +39,10 @@ You just need EC2 launch permissions. No special configuration required for inst
 ---
 
 ### 4. Setup CloudWatch Event Rule
-1. Go to Amazon CloudWatch > Rules > Create rule
-2. Select Event Source:
-   - Event Pattern:
+1. Go to Amazon CloudWatch > Events > Rules > Create rule
+2. Name the rule: AutoTagEC2Launch_tanuj
+3. Select Event Source: AWS event pattern
+   - Use this JSON pattern:
      ```bash
       {
       "source": ["aws.ec2"],
@@ -52,7 +53,6 @@ You just need EC2 launch permissions. No special configuration required for inst
       }
      ```
    3. Add Target → Lambda Function you created
-   4. Name the rule: AutoTagEC2Logs_tanuj
   ---
 
 ## Testing
