@@ -36,6 +36,8 @@ You just need EC2 launch permissions. No special configuration required for inst
 4. Lambda Code<br>
    You can use the below file for reference.<br>
    [LambdaAutoTagEC2Role_tanuj.py](https://github.com/tanujbhatia24/AutoTagging_EC2_Instances/blob/main/LambdaAutoTagEC2Role_tanuj.py)
+5. Add a new resource-based policy
+   
 ---
 
 ### 4. Setup CloudWatch Event Rule
@@ -67,8 +69,9 @@ You just need EC2 launch permissions. No special configuration required for inst
 ## Snapshots (Attach for validation)<br>
 1. EC2 instance creation with two tags<br>
 <img width="601" alt="image" src="https://github.com/user-attachments/assets/8469ab62-0920-4073-b4ff-dbd9caf3d128" /><br>
-2. Lambda function & trigger<br>
+2. Lambda function, trigger and resource-based policy<br>
 ![image](https://github.com/user-attachments/assets/8709e0d6-87f1-4dd2-8e03-c46de4ae7b94)<br>
+![image](https://github.com/user-attachments/assets/5c80665a-3964-4fca-ae05-0b60fddd896d)<br>
 3. IAM Role with policy<br>
 <img width="920" alt="image" src="https://github.com/user-attachments/assets/1a081dd9-0a3c-49b3-bb38-a4dd82eff817" /><br>
 4. CloudWatch Event rule<br>
